@@ -1,6 +1,5 @@
 import defaultTheme from "./default";
-
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme } from "@mui/material/styles";
 
 const overrides = {
   typography: {
@@ -25,6 +24,7 @@ const overrides = {
   },
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   default: createMuiTheme({ ...defaultTheme, ...overrides }),
 };
